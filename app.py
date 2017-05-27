@@ -113,14 +113,14 @@ def makeWebhookResult(req):
 		return set(e1 for e1 in edits1(word) if e1 in NWORDS)	
 
 	def valid(item):
-	dummy_set=set()
-	if item in NWORDS:
-		dummy_set.add(item)
-		return dummy_set
-	elif len(known_edits1(item))>0:
-		return known_edits1(item) 	
-	else:
-		return known_edits2(item)	
+		dummy_set=set()
+		if item in NWORDS:
+			dummy_set.add(item)
+			return dummy_set
+		elif len(known_edits1(item))>0:
+			return known_edits1(item) 	
+		else:
+			return known_edits2(item)	
 
 	try:
 		if req.get("result").get("action") == 'search_blog':
