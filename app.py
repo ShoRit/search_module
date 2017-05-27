@@ -28,7 +28,7 @@ def webhook():
 	return r
 
 def makeWebhookResult(req):
-		
+	from collections import defaultdict	
 	import re
 	url_dict=defaultdict(list)
 
