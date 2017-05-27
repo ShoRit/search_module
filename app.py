@@ -145,11 +145,12 @@ def makeWebhookResult(req):
 					#print(init_set)
 					count+=1	
 					temp_set=set()	
-
+				print(init_set)
+				
 				speech=""
 				for i in init_set:
 					speech=speech+i+"\n"	
-						
+				print(speech)		
 				return {
 					"speech": speech,
 					"displayText": speech,
