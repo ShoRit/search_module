@@ -28,12 +28,9 @@ def webhook():
 	return r
 
 def makeWebhookResult(req):
-<<<<<<< HEAD
-			
-	from collections import defaultdict
-=======
+
 	from collections import defaultdict	
->>>>>>> 95f75e87f2bf1f9dd0f3231cd8f1a321c7dd7358
+
 	import re
 	import pickle
 	url_dict=defaultdict(list)
