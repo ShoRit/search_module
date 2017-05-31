@@ -110,7 +110,7 @@ def makeWebhookResult(req):
 				return {
 					"speech": speech,
 					"displayText": speech,
-					"data": {},
+					"data": {"facebook":{"attachment": {"type": "file","payload": {"url": "https://examples.api.ai/RichMessagesFiles/LoremIpsum.pdf"}}}},
 					"contextOut": [],
 					"source": "apiai-onlinestore-shipping"
 				}
