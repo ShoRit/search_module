@@ -106,11 +106,12 @@ def makeWebhookResult(req):
 				speech=""
 				for i in init_set:
 					speech=speech+i+"\n"	
-				print(speech)		
+				print(speech)
+				resul="https://translate.google.com/#en/bn/"+"I am sleepy"		
 				return {
-					"speech": speech,
+					"speech": resul,
 					"displayText": speech,
-					"data": {"facebook":{"attachment": {"type": "file","payload": {"url": "https://examples.api.ai/RichMessagesFiles/LoremIpsum.pdf"}}}},
+					"data":{},# {"facebook":{"attachment": {"type": "file","payload": {"url": "https://examples.api.ai/RichMessagesFiles/LoremIpsum.pdf"}}}},
 					"contextOut": [],
 					"source": "apiai-onlinestore-shipping"
 				}
